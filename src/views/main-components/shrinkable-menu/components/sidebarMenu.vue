@@ -42,6 +42,7 @@ export default {
     },
     methods: {
         changeMenu (active) {
+            debugger
             this.$emit('on-change', active);
         },
         itemTitle (item) {

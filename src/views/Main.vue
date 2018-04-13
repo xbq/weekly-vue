@@ -138,6 +138,8 @@
             },
             handleClickUserDropdown (name) {
                 if (name === 'ownSpace') {
+                    debugger
+                    console.log(this);
                     util.openNewPage(this, 'ownspace_index');
                     this.$router.push({
                         name: 'ownspace_index'
@@ -162,7 +164,7 @@
                 }
             },
             handleSubmenuChange (val) {
-                // console.log(val)
+                 //console.log(val)
             },
             beforePush (name) {
                 // if (name === 'accesstest_index') {
@@ -177,9 +179,7 @@
             }
         },
         watch: {
-            //监听$router
             '$route' (to) {
-                debugger
                 this.$store.commit('setCurrentPageName', to.name);
                 let pathArr = util.setCurrentPath(this, to.name);
                 if (pathArr.length > 2) {
