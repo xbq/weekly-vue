@@ -221,6 +221,16 @@ export const appRouter = [
         children: [
             { path: 'index', title: '错误页面', name: 'errorpage_index', component: () => import('@/views/error-page/error-page.vue') }
         ]
+    },
+    {
+        path: '/user-manage',
+        icon: 'android-sad',
+        title: '用户管理',
+        name: 'userpage',
+        component: Main,
+        children: [
+            { path: 'index', title: '用户管理', name: 'user-manage', component: () => import('@/views/user/usermanage.vue') }
+        ]
     }
 ];
 

@@ -11,6 +11,7 @@
                 :before-push="beforePush"
                 :open-names="openedSubmenuArr"
                 :menu-list="menuList">
+                <!--在左侧菜单组件中预留了插槽，slot='top'会插入指定的插槽-->
                 <div slot="top" class="logo-con">
                     <img v-show="!shrink"  src="../images/logo.jpg" key="max-logo" />
                     <img v-show="shrink" src="../images/logo-min.jpg" key="min-logo" />

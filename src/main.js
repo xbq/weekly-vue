@@ -33,6 +33,7 @@ Axios.interceptors.response.use(
     });
 
 Vue.prototype.$axios = Axios;
+Vue.prototype.server = '/weekly';
 Vue.use(VueI18n);
 Vue.use(iView);
 
