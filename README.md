@@ -8,3 +8,5 @@ F:\code\vue\weekly-vue\src\views\main-components\shrinkable-menu\shrinkable-menu
 F:\code\vue\weekly-vue\src\views\main-components\shrinkable-menu\components\sidebarMenu.vue：左侧菜单子组件
 F:\code\vue\weekly-vue\src\views\main-components\shrinkable-menu\components\sidebarMenuShrink.vue：左侧菜单子组件
 
+2、以modal的形式去编辑table
+    1）、usermanage为父组件，userInfo为子组件，

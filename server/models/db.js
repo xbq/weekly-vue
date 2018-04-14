@@ -1,6 +1,6 @@
 var Sequelize = require('sequelize');
 const Op = Sequelize.Op;
-var sequelize = new Sequelize('weekly', 'root', 'root', {
+var sequelize = new Sequelize('weekly', 'root', '', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
