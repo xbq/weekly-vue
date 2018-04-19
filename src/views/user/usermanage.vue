@@ -20,10 +20,7 @@
                 <Button type="primary" size="large"  @click="save">保存</Button>
                 <Button type="primary" size="large"  @click="cancel">取消</Button>
             </div>
-            <Child :parentMsg="propsTest"></Child>
         </Modal>
-
-        {{propsTest}}
     </div>
 </template>
 <script>
@@ -32,7 +29,6 @@ import Child from './child'
     export default {
         data () {
             return {
-                propsTest:{a:1},
                 modal_loading: false,
                 user: {},
                 modalUserinfo: false,
@@ -186,14 +182,13 @@ import Child from './child'
         },
         computed: {},
         components: {
-            UserInfo,
-            Child
+            UserInfo
         },
         created () {
             this.update();
             this.$Message.config({
                 top: 100,
-                duration: 2
+                duration: 1
             });
         },
         watch: {
